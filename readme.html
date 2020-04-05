@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMS Readme</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="fonts" href="./9303.ttf">
+    <link rel="shortcut icon" href="./icons/red_sword.png" type="image/x-icon">
+    <!--<link rel="stylesheet" href="readme.css"> -->
+</head>
+<body>
+    <script>
+        function engl() {
+            //Переключение на английский
+            document.getElementById('rusl').style.display="none"
+            document.getElementById('engl').style.display="block"
+        }
+
+        function rusl() {
+            //Переключение на русский язык
+            document.getElementById('rusl').style.display="block"
+            document.getElementById('engl').style.display="none"
+        }
+
+        function list() {
+            //Открывает лист предметов
+            document.getElementById('listru').style.display="block"
+            document.getElementById('listeng').style.display="block"
+            document.getElementById('menuru').style.display="none"
+            document.getElementById('menueng').style.display="none"
+        }
+            
+        function contacts() {
+            document.getElementById('contactsru').style.display="block"
+            document.getElementById('contactseng').style.display="block"
+            document.getElementById('menuru').style.display="none"
+            document.getElementById('menueng').style.display="none"
+        }
+
+        function back() {
+            //Производит переход обратно в меню
+            document.getElementById('listru').style.display="none"
+            document.getElementById('listeng').style.display="none"
+            document.getElementById('contactsru').style.display="none"
+            document.getElementById('contactseng').style.display="none"
+            document.getElementById('menuru').style.display="block"
+            document.getElementById('menueng').style.display="block"
+        }
+
+    </script>
+    <style>
+        body{
+    font-family: Minecraft;
+    background-color: rgb(75, 70, 99);
+    color: white;
+    }
+    td{
+        outline: 2px solid rgb(76, 85, 116);
+        text-align: center;
+        height: 37px;
+    }
+    .sname{
+        outline: 2px solid rgb(76, 85, 116);
+    }
+    table{
+        width: 100%;
+    }
+    @font-face{
+        font-family: Minecraft;
+        src: url(./fonts/9303.ttf);
+}
+.rus{
+    display: none;
+}
+.btn{
+    height: 20px;
+    transition: .1s;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+Ru{color: white;}
+Ss{color: blue;}
+Kiy{color: red;}
+#listeng{display: none;}
+#listru{display: none;}
+#contactseng{display: none;}
+#contactsru{display: none;}
+a{text-decoration: none; color: white}
+    </style>
+    <!-- Английский язык -->
+    <div class="eng" id="engl">
+        <!-- Переключение языка -->
+        <div class="rusclick changelang btn" onclick="rusl()">Переключить на <Ru>Ру</Ru><Ss>cc</Ss><Kiy>кий</Kiy></div>
+        <!-- Менюшка -->
+        <div id="menueng">
+            <div onclick="list()" class="btn">Item List</div>
+            <div class="btn" onclick="contacts()">Contacts</div>
+        </div>
+        <!-- Лист предметов -->
+        <div id="listeng">
+            <div onclick="back()" class="btn">Back</div> <!-- Кнопка "Назад" -->
+        <table name="rename">
+            <div class="sname">Swords names</div>
+            <tr><td></td><td>Name</td><td>Can be Wooden</td><td>Can be Stone</td><td>Can be iron</td><td>Can be Gold</td><td>Can be Diamond</td><td>Enchantment</td></tr>
+            <tr><td><img src="./icons/black_sword.png" ></td><td>Black sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/blue_sword.png" ></td><td>Blue sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/green_sword.png" ></td><td>Green sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/light_blue_sword.png" ></td><td>Light Blue sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/magenta_sword.png" ></td><td>Magenta sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td> <td></td></tr>
+            <tr><td><img src="./icons/orange_sword.png" ></td><td>Orange sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td> <td></td></tr>
+            <tr><td><img src="./icons/pink_sword.png" ></td><td>Pink sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td> <td></td></tr>
+            <tr><td><img src="./icons/purple_sword.png" ></td><td>Purple sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td> <td></td></tr>
+            <tr><td><img src="./icons/red_sword.png" ></td><td>Red sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr> 
+            <tr><td><img src="./icons/yellow_sword.png" ></td><td>Yellow sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td> <td></td></tr>
+            <tr><td><img src="./icons/white_sword.png" ></td><td>White sword*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/baget.png" ></td><td>Baguette*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+        </table>
+        </div>
+        <!-- Контакты -->
+    <div id="contactseng">
+        <div onclick="back()" class="btn">Back</div> <!-- Кнопка "Назад" -->
+        <a href="https://vk.com/slime.discord"><div><img src="./icons/vk.png">Discord</div></a>
+        <a href="https://vk.com/slime.discord"><div><img src="./icons/vk.png">VK</div></a>
+    </div>
+    </div>
+    <!-- Русский язык -->
+    <div class="rus" id="rusl">
+        <!-- Переключение языка -->
+        <div class="rusclick changelang btn" onclick="engl()">Change to English</div>
+        <!-- Менюшка -->
+        <div id="menuru">
+            <div onclick="list()" class="btn">Лист предметов</div>
+            <div class="btn" onclick="contacts()">Контакты</div>
+        </div>
+        <!-- Лист предметов -->
+        <div id="listru">
+            <div onclick="back()" class="btn">Вернуться</div>
+        <table name="rename">
+            <div class="sname">Имена мечей</div>
+            <tr><td></td><td>Имя</td><td>Может быть деревянным</td><td>Может быть каменным</td><td>Может быть железным</td><td>Может быть золотым</td><td>Может быть алмазным</td><td>Зачарования</td></tr>
+            <tr><td><img src="./icons/black_sword.png" ></td><td>Чёрный меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/blue_sword.png" ></td><td>Синий меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/green_sword.png" ></td><td>Зелёный меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/light_blue_sword.png" ></td><td>Голубой меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/magenta_sword.png" ></td><td>Пурпурный меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/orange_sword.png" ></td><td>Оранжевый меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/pink_sword.png" ></td><td>Розовый меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/purple_sword.png" ></td><td>Фиолетовый меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/red_sword.png" ></td><td>Красный меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/yellow_sword.png" ></td><td>Жёлтый меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/white_sword.png" ></td><td>Бёлый меч*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+            <tr><td><img src="./icons/baget.png" ></td><td>Багет*</td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td><img src="./icons/yes.png"></td><td></td></tr>
+        </table>
+
+    </div>
+    <!-- Контакты -->
+    <div id="contactsru">
+        <div onclick="back()" class="btn">Вернуться</div> <!-- Кнопка "Назад" -->
+        <a href="https://vk.com/slime.discord"><div><img src="./icons/vk.png">Discord</div></a>
+        <a href="https://vk.com/slime.discord"><div><img src="./icons/vk.png">ВК</div></a>
+    </div>
+    </div>
+</body>
+</html>
