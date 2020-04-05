@@ -23,10 +23,10 @@ table{
 }
 .btn{
     height: 20px;
-    transition: .1s;
+    transition: .2s;
 }
 .btn:hover{
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.5);
 }
 Ru{color: white;}
 Ss{color: blue;}
