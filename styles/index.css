@@ -1,0 +1,46 @@
+body{
+    font-family: Minecraft;
+    background-color: rgb(75, 70, 99);
+    color: white;
+    }
+td{
+    outline: 2px solid rgb(76, 85, 116);
+    text-align: center;
+    height: 37px;
+}
+.sname{
+    outline: 2px solid rgb(76, 85, 116);
+}
+table{
+    width: 100%;
+}
+@font-face{
+    font-family: Minecraft;
+    src: url(../fonts/9303.ttf);
+}
+.rus{
+    display: none;
+}
+.btn{
+    height: 20px;
+    transition: .1s;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+Ru{color: white;}
+Ss{color: blue;}
+Kiy{color: red;}
+#listeng{display: none;}
+#listru{display: none;}
+#contactseng{display: none;}
+#contactsru{display: none;}
+a{text-decoration: none; color: white}
+
+Eng{
+    background-image: url(../icons/american_flag.png);
+    background-size: cover;
+}
+lish{
+    color: black;
+}
